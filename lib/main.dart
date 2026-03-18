@@ -10,56 +10,57 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       home: Scaffold(
         backgroundColor: Colors.black,
         body: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
+              const SizedBox(height: 140),
               SizedBox(
-                height: 83,
-                width: 75,
+                height: 100,
+                width: 90,
                 child: Stack(
                   children: [
                     Positioned(
-                      top: 0,
+                      top: 7,
                       left: 0,
                       child: Container(
-                        height: 35,
-                        width: 35,
+                        height: 38,
+                        width: 38,
                         decoration: const BoxDecoration(
-                          color: Color.fromARGB(255, 21, 48, 136),
+                          color: Colors.deepPurpleAccent,
                           shape: BoxShape.circle,
                         ),
                       ),
                     ),
                     Positioned(
-                      bottom: 5,
+                      bottom: 10,
                       left: 0,
                       child: Container(
-                        height: 38,
-                        width: 35,
+                        height: 39,
+                        width: 39,
                         decoration: const BoxDecoration(
-                          color: Color.fromARGB(255, 21, 48, 136),
+                          color: Colors.deepPurpleAccent,
                           borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(60),
+                            bottomLeft: Radius.circular(72),
                           ),
                         ),
                       ),
                     ),
                     Positioned(
                       top: 0, 
-                      right: 0,
+                      right: 5,
                       child: Container(
-                        height: 83, 
-                        width: 35,
+                        height: 100, 
+                        width: 42,
                         decoration: const BoxDecoration(
-                          color: Color.fromARGB(255, 21, 48, 136),
+                          color: Colors.deepPurpleAccent,
                           borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(90),
-                            bottomLeft: Radius.circular(90),
+                            topRight: Radius.circular(108),
+                            bottomLeft: Radius.circular(108),
                           ),
                         ),
                       ),
@@ -67,6 +68,94 @@ class MainApp extends StatelessWidget {
                   ],
                 ),
               ),
+              const SizedBox(height: 10),
+              Text(
+                'Get your Money \n Under Control',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30,
+                ),
+              ),
+              const SizedBox(height: 10),
+              Text(
+                'Manage your expenses. \n Seamlessly.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 17,
+                ),
+              ),
+              const SizedBox(height: 180),
+              Container(
+                height: 50,
+                width: 280,
+                decoration: BoxDecoration(
+                  color: Colors.deepPurpleAccent,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: const Center(
+                  child: Text(
+                    'Sign Up with Email ID',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                    ),
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 20),
+              Container(
+                height: 50,
+                width: 280,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Center(
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min, 
+                    children: [
+                      Image.asset(
+                        'assets/google.png',
+                        height: 24, 
+                      ),
+                       
+                      const Text(
+                        'Sign Up with Google',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+              ),
+              const SizedBox(height: 35),
+              const Text.rich(
+                TextSpan(
+                  text: 'Already have an account? ',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 14,
+                  ),
+                  children: [
+                    TextSpan(
+                      text: 'Sign In',
+                      style: TextStyle(
+                        decoration: TextDecoration.underline,
+                        decorationColor: Colors.white,
+                        color: Colors.white,
+                        fontSize: 14,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+                
             ],
           ),
         ),
