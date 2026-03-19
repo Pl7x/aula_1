@@ -26,7 +26,6 @@ class MainApp extends StatelessWidget {
                   children: [
                     Positioned(
                       top: 7,
-                      left: 0,
                       child: Container(
                         height: 38,
                         width: 38,
@@ -38,7 +37,6 @@ class MainApp extends StatelessWidget {
                     ),
                     Positioned(
                       bottom: 10,
-                      left: 0,
                       child: Container(
                         height: 39,
                         width: 39,
@@ -50,8 +48,7 @@ class MainApp extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Positioned(
-                      top: 0, 
+                    Positioned( 
                       right: 5,
                       child: Container(
                         height: 100, 
@@ -155,7 +152,6 @@ class MainApp extends StatelessWidget {
                   ],
                 ),
               ),
-                
             ],
           ),
         ),
