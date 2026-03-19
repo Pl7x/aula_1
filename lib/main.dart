@@ -83,7 +83,7 @@ class MainApp extends StatelessWidget {
                   fontSize: 17,
                 ),
               ),
-              const SizedBox(height: 180),
+              const SizedBox(height: 140),
               Container(
                 height: 50,
                 width: 280,
@@ -102,7 +102,7 @@ class MainApp extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               Container(
                 height: 50,
                 width: 280,
@@ -131,7 +131,7 @@ class MainApp extends StatelessWidget {
                 ),
 
               ),
-              const SizedBox(height: 35),
+              const SizedBox(height: 15),
               const Text.rich(
                 TextSpan(
                   text: 'Already have an account? ',
